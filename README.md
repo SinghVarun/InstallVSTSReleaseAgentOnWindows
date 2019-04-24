@@ -1,6 +1,7 @@
 # Install AzurePipeline ReleaseAgent On Windows container.
-Install AzurePipeline Release Agent on Windows container using docker
-To set up AzurePipeline Release Agent agent on Windows Docker containerm first setup three environment variable present in docker-compose.yml, post cloning the repo.
+Install AzurePipeline Release Agent on Windows container using docker. 
+#### *Assumption, you should have Docker for Windows installed on the machine.*
+To set up AzurePipeline Release Agent agent on Windows Docker container first setup three environment variable present in docker-compose.yml, post cloning the repo.
 Three environment variable are listed below
 1. VSTS_ACCOUNT - AzureDevOps Organization.
 2. VSTS_TOKEN - (PAT TOKEN should have access level =  Agent Pools (read, manage), as mentioned [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#permissions))
