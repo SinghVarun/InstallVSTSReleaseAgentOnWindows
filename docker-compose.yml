@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    vstsagent:
+        environment:
+            VSTS_ACCOUNT: << AzureDevops Organization >>
+            VSTS_TOKEN: << PAT TOKEN >> 
+            VSTS_POOL: << Agent Pool Name >>
+        build:
+            context: .
+            dockerfile: dockerfile
+        tty: true
+        stdin_open: true
